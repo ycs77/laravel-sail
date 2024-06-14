@@ -4,6 +4,7 @@ UNAMEOUT="$(uname -s)"
 
 # Verify operating system is supported...
 case "${UNAMEOUT}" in
+    MINGW64*)           MACHINE=windows;;
     Linux*)             MACHINE=linux;;
     Darwin*)            MACHINE=mac;;
     *)                  MACHINE="UNKNOWN"
